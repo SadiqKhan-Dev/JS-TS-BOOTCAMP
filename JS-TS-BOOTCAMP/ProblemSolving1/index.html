@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-TS-BOOTCAMP</title>
+</head>
+<body>
+    <h1>JS-TS-BOOTCAMP Assignment</h1>
+
+    <br>
+
+    <h2>Q1) What is DOM? </h2>
+        <p><strong>DOM </strong>stands for <strong>Document Object Model</strong>
+        </p>
+        <p>It is a programming interface provided bu the browser that allows developers to interact <br> with and manipulate HTML documents.
+        </p>
+
+        <p>it represents the structure of the document as a tree of objects.</li>
+        <p>Each element attribute and text in the HTML document becomes a  node in the DOM.</p>
+        <p>Javascript is commonly used to manipulate the DOM to change content  style and structure dynamically.</p>
+
+        <br>
+
+
+        <h2>Q2) Explain DOM with Programming and Diagram</h2>
+        <!-- Dom Examples section  -->
+
+        <h2 id="title">Welcome to DOM</h2>
+        <p id="description">This is Dom manipulation example.</p>
+
+        <script>
+            const heading = document.getElementById("title")
+            const paragraph = document.getElementById("description")
+
+            heading.innerHTML = "Dom Manipulation in Javascript";
+            paragraph.style.color = "red";
+        </script>
+
+        <br>
+
+        <h2>DOM Tree Diagram:</h2>
+
+        <br>
+
+        <h2>Q3) What is BOM?</h2>
+
+        <p><strong>BOM</strong> stand for <strong>Browser Objec Model.</strong></p>
+        <p>It allows Javascript to interact with the browser outside of the HTML document.</p>
+
+        <ul>
+            <li>window</li>
+            <li>navigator</li>
+            <li>location</li>
+            <li>history</li>
+            <li>screen</li>
+            <li>alert, confirm, prompt </li>
+        </ul>
+
+        <br>
+
+        <h2>Q4) BOM Programming Example and 3 Steps of BOM</h2>
+
+        <script>
+    alert("Welcome to BOM!");
+
+    console.log("Current URL: " + window.location.href);
+
+    console.log("Browser Info: " + window.navigator.userAgent);
+  </script>
+</body>
+</html>
